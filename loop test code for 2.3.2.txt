@@ -1,0 +1,36 @@
+for 1 in a1 to j10:
+
+Sub LoopsTest():
+    Worksheets("Loops test").Activate
+    
+    For i = 1 To 10
+        For j = 1 To 10
+            Cells(i, j).Value = 1
+        Next j
+    Next i
+    
+    'Cells(12, 3).Value = "testing"
+    
+End Sub
+
+--------------------
+
+for 1-10 in columns a to J  (replace i value w/ j to do same but w/ rows)
+
+Sub LoopsTest():
+    Worksheets("Loops test").Activate
+    
+    For i = 1 To 10
+        For j = 1 To 10
+            Cells(i, j).Value = i
+        Next j
+    Next i
+    
+    'Cells(12, 3).Value = "testing"
+    
+End Sub
+
+do i + j for the sums of the rows/columns in each cell
+
+Range("a1:j10").Clear to clear cells
+
